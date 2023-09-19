@@ -48,6 +48,14 @@ class RadixColorsDark {
 
   final RadixColor indigoA = indigoDarkAScale;
 
+  final RadixColor iris = irisDarkScale;
+
+  final RadixColor irisA = irisDarkAScale;
+
+  final RadixColor jade = jadeDarkScale;
+
+  final RadixColor jadeA = jadeDarkAScale;
+
   final RadixColor lime = limeDarkScale;
 
   final RadixColor limeA = limeDarkAScale;
@@ -83,6 +91,10 @@ class RadixColorsDark {
   final RadixColor red = redDarkScale;
 
   final RadixColor redA = redDarkAScale;
+
+  final RadixColor ruby = rubyDarkScale;
+
+  final RadixColor rubyA = rubyDarkAScale;
 
   final RadixColor sage = sageDarkScale;
 
