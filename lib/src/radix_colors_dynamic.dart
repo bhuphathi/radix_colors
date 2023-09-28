@@ -12,8 +12,11 @@ class RadixColorsDynamic {
   /// - [Lightness test](https://www.radix-ui.com/docs/colors/tests/balance#lightness-test)
   /// - [Saturation test](https://www.radix-ui.com/docs/colors/tests/balance#saturation-test)
   /// - [Color contrast tests](https://www.radix-ui.com/docs/colors/tests/contrast)
-  RadixColorsDynamic(BuildContext context, {Brightness? brightness}) {
-    _isDark = (brightness ?? Theme.of(context).brightness) == Brightness.dark;
+  // RadixColorsDynamic(BuildContext context, {Brightness? brightness}) {
+  //   _isDark = (brightness ?? Theme.of(context).brightness) == Brightness.dark;
+  // }
+  RadixColorsDynamic(Brightness? brightness) {
+    _isDark = brightness == Brightness.dark;
   }
 
   RadixColor get amber {
