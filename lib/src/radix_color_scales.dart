@@ -77,6 +77,25 @@ const amberDarkAScale = RadixColor(
   name: "amberDarkA",
 );
 
+const blackScale = RadixColor(
+  0xff000000,
+  <int, Color>{
+    1: Color(0xffffffff),
+    2: Color(0xffe6e6e6),
+    3: Color(0xffcccccc),
+    4: Color(0xffb3b3b3),
+    5: Color(0xff999999),
+    6: Color(0xff808080),
+    7: Color(0xff666666),
+    8: Color(0xff4d4d4d),
+    9: Color(0xff333333),
+    10: Color(0xff262626),
+    11: Color(0xff1a1a1a),
+    12: Color(0xff000000),
+  },
+  name: "black",
+);
+
 const blackAScale = RadixColor(
   0xdf000000,
   <int, Color>{
@@ -94,6 +113,44 @@ const blackAScale = RadixColor(
     12: Color(0xdf000000),
   },
   name: "blackA",
+);
+
+const blackDarkScale = RadixColor(
+  0xff000000,
+  <int, Color>{
+    1: Color(0xff000000),
+    2: Color(0xff1a1a1a),
+    3: Color(0xff262626),
+    4: Color(0xff333333),
+    5: Color(0xff4d4d4d),
+    6: Color(0xff666666),
+    7: Color(0xff808080),
+    8: Color(0xff999999),
+    9: Color(0xffb3b3b3),
+    10: Color(0xffcccccc),
+    11: Color(0xffe6e6e6),
+    12: Color(0xffffffff),
+  },
+  name: "blackDark",
+);
+
+const blackDarkAScale = RadixColor(
+  0xecffffff,
+  <int, Color>{
+    1: Color(0x00000000),
+    2: Color(0x03ffffff),
+    3: Color(0x12ffffff),
+    4: Color(0x1bffffff),
+    5: Color(0x22ffffff),
+    6: Color(0x2bffffff),
+    7: Color(0x37ffffff),
+    8: Color(0x50ffffff),
+    9: Color(0x5fffffff),
+    10: Color(0x74ffffff),
+    11: Color(0xa9ffffff),
+    12: Color(0xecffffff),
+  },
+  name: "blackDarkA",
 );
 
 const blueScale = RadixColor(
@@ -2300,6 +2357,25 @@ const violetDarkAScale = RadixColor(
   name: "violetDarkA",
 );
 
+const whiteScale = RadixColor(
+  0xffffffff,
+  <int, Color>{
+    1: Color(0xff000000),
+    2: Color(0xff1a1a1a),
+    3: Color(0xff262626),
+    4: Color(0xff333333),
+    5: Color(0xff4d4d4d),
+    6: Color(0xff666666),
+    7: Color(0xff808080),
+    8: Color(0xff999999),
+    9: Color(0xffb3b3b3),
+    10: Color(0xffcccccc),
+    11: Color(0xffe6e6e6),
+    12: Color(0xffffffff),
+  },
+  name: "white",
+);
+
 const whiteAScale = RadixColor(
   0xecffffff,
   <int, Color>{
@@ -2317,6 +2393,44 @@ const whiteAScale = RadixColor(
     12: Color(0xecffffff),
   },
   name: "whiteA",
+);
+
+const whiteDarkScale = RadixColor(
+  0xff000000,
+  <int, Color>{
+    1: Color(0xffffffff),
+    2: Color(0xffe6e6e6),
+    3: Color(0xffcccccc),
+    4: Color(0xffb3b3b3),
+    5: Color(0xff999999),
+    6: Color(0xff808080),
+    7: Color(0xff666666),
+    8: Color(0xff4d4d4d),
+    9: Color(0xff333333),
+    10: Color(0xff262626),
+    11: Color(0xff1a1a1a),
+    12: Color(0xff000000),
+  },
+  name: "whiteDark",
+);
+
+const whiteDarkAScale = RadixColor(
+  0xdf000000,
+  <int, Color>{
+    1: Color(0x03000000),
+    2: Color(0x06000000),
+    3: Color(0x0e000000),
+    4: Color(0x14000000),
+    5: Color(0x1b000000),
+    6: Color(0x22000000),
+    7: Color(0x2b000000),
+    8: Color(0x44000000),
+    9: Color(0x72000000),
+    10: Color(0x7f000000),
+    11: Color(0x9b000000),
+    12: Color(0xdf000000),
+  },
+  name: "whiteDarkA",
 );
 
 const yellowScale = RadixColor(

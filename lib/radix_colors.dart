@@ -60,6 +60,8 @@ class RadixColors {
 
   static const RadixColor amberA = amberAScale;
 
+  static const RadixColor black = blackScale;
+
   static const RadixColor blackA = blackAScale;
 
   static const RadixColor blue = blueScale;
@@ -178,6 +180,8 @@ class RadixColors {
 
   static const RadixColor violetA = violetAScale;
 
+  static const RadixColor white = whiteScale;
+
   static const RadixColor whiteA = whiteAScale;
 
   static const RadixColor yellow = yellowScale;
@@ -187,6 +191,8 @@ class RadixColors {
   static const Color transparent = Colors.transparent;
 
   static List<RadixColor> get primaries => [
+        white,
+        black,
         gray,
         mauve,
         slate,
@@ -201,24 +207,26 @@ class RadixColors {
         plum,
         purple,
         violet,
-        indigo,
         iris,
+        indigo,
         blue,
         cyan,
         teal,
+        jade,
         green,
         grass,
-        brown,
-        orange,
-        sky,
-        mint,
-        jade,
-        lime,
-        yellow,
-        amber,
+        bronze,
         gold,
         brown,
+        orange,
+        amber,
+        yellow,
+        lime,
+        mint,
+        sky,
         grayA,
+        whiteA,
+        blackA,
         mauveA,
         slateA,
         sageA,
@@ -232,18 +240,18 @@ class RadixColors {
         plumA,
         purpleA,
         violetA,
-        indigoA,
         irisA,
+        indigoA,
         blueA,
         cyanA,
         tealA,
+        jadeA,
         greenA,
         grassA,
         brownA,
         orangeA,
         skyA,
         mintA,
-        jadeA,
         limeA,
         yellowA,
         amberA,

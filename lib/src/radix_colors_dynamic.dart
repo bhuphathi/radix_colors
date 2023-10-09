@@ -27,8 +27,12 @@ class RadixColorsDynamic {
     return _isDark ? amberDarkAScale : amberAScale;
   }
 
+  RadixColor get black {
+    return _isDark ? blackDarkScale : blackScale;
+  }
+
   RadixColor get blackA {
-    return blackAScale;
+    return _isDark ? blackDarkAScale : blackAScale;
   }
 
   RadixColor get blue {
@@ -263,8 +267,12 @@ class RadixColorsDynamic {
     return _isDark ? violetDarkAScale : violetAScale;
   }
 
+  RadixColor get white {
+    return _isDark ? whiteDarkScale : whiteScale;
+  }
+
   RadixColor get whiteA {
-    return whiteAScale;
+    return _isDark ? whiteDarkAScale : whiteAScale;
   }
 
   RadixColor get yellow {
@@ -276,6 +284,8 @@ class RadixColorsDynamic {
   }
 
   List<RadixColor> get primaries => [
+        white,
+        black,
         gray,
         mauve,
         slate,
@@ -298,16 +308,18 @@ class RadixColorsDynamic {
         jade,
         green,
         grass,
-        brown,
-        orange,
-        sky,
-        mint,
-        lime,
-        yellow,
-        amber,
+        bronze,
         gold,
         brown,
+        orange,
+        amber,
+        yellow,
+        lime,
+        mint,
+        sky,
         grayA,
+        whiteA,
+        blackA,
         mauveA,
         slateA,
         sageA,

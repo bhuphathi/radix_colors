@@ -8,6 +8,10 @@ class RadixColorsDark {
 
   final RadixColor amberA = amberDarkAScale;
 
+  final RadixColor black = blackDarkScale;
+
+  final RadixColor blackA = blackDarkAScale;
+
   final RadixColor blue = blueDarkScale;
 
   final RadixColor blueA = blueDarkAScale;
@@ -123,6 +127,10 @@ class RadixColorsDark {
   final RadixColor violet = violetDarkScale;
 
   final RadixColor violetA = violetDarkAScale;
+
+  final RadixColor white = whiteDarkScale;
+
+  final RadixColor whiteA = whiteDarkAScale;
 
   final RadixColor yellow = yellowDarkScale;
 
