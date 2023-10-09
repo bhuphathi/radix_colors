@@ -29,11 +29,11 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Builder(builder: (context) {
         return Scaffold(
-          backgroundColor: RadixColorsDynamic(context).gray.step1,
+          backgroundColor: RadixColorsDynamic(brightness).gray.step1,
           appBar: AppBar(
             elevation: 0,
-            backgroundColor: RadixColorsDynamic(context).gray.step1,
-            foregroundColor: RadixColorsDynamic(context).gray.step12,
+            backgroundColor: RadixColorsDynamic(brightness).gray.step1,
+            foregroundColor: RadixColorsDynamic(brightness).gray.step12,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
             title: const Text(
               'Flutter Radix Colors',
@@ -50,9 +50,7 @@ class _MyAppState extends State<MyApp> {
                 });
               },
               icon: Icon(
-                brightness == Brightness.dark
-                    ? Icons.sunny
-                    : Icons.nightlight_outlined,
+                brightness == Brightness.dark ? Icons.sunny : Icons.nightlight_outlined,
               ),
             ),
             actions: [
@@ -83,7 +81,7 @@ class _MyAppState extends State<MyApp> {
                             fontSize: 28,
                             letterSpacing: -1,
                             fontWeight: FontWeight.w600,
-                            color: RadixColorsDynamic(context).gray.step12,
+                            color: RadixColorsDynamic(brightness).gray.step12,
                           ),
                         ),
                         const SizedBox(height: 12),
@@ -93,7 +91,7 @@ class _MyAppState extends State<MyApp> {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w300,
-                            color: RadixColorsDynamic(context).gray.step11,
+                            color: RadixColorsDynamic(brightness).gray.step11,
                           ),
                         ),
                         const SizedBox(height: 40),
@@ -124,10 +122,7 @@ class _MyAppState extends State<MyApp> {
                     const SizedBox(height: 80),
                     colorSteps(),
                     const SizedBox(height: 6),
-                    ...RadixColorsDynamic(context)
-                        .primaries
-                        .take(28)
-                        .map((color) {
+                    ...RadixColorsDynamic(brightness).primaries.take(33).map((color) {
                       return colorBlock(
                           "${color.name?.substring(0, 1).toUpperCase()}${color.name?.substring(1, color.name?.length)}",
                           color);
@@ -138,7 +133,7 @@ class _MyAppState extends State<MyApp> {
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
-                        color: RadixColorsDynamic(context).gray.step12,
+                        color: RadixColorsDynamic(brightness).gray.step12,
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -147,7 +142,7 @@ class _MyAppState extends State<MyApp> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w300,
-                        color: RadixColorsDynamic(context).gray.step10,
+                        color: RadixColorsDynamic(brightness).gray.step10,
                       ),
                     ),
                     const SizedBox(height: 40),
@@ -156,7 +151,7 @@ class _MyAppState extends State<MyApp> {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
-                        color: RadixColorsDynamic(context).gray.step12,
+                        color: RadixColorsDynamic(brightness).gray.step12,
                       ),
                     ),
                     const SizedBox(height: 12),
@@ -166,7 +161,7 @@ class _MyAppState extends State<MyApp> {
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w300,
-                        color: RadixColorsDynamic(context).gray.step10,
+                        color: RadixColorsDynamic(brightness).gray.step10,
                       ),
                     ),
                     const SizedBox(height: 60),
@@ -184,8 +179,7 @@ class _MyAppState extends State<MyApp> {
                           const SizedBox(height: 16),
                           colorSteps(),
                           colorBlock(color.name.toLowerCase(), color.primary),
-                          colorBlock(
-                              "${color.name.toLowerCase()}A", color.accent),
+                          colorBlock("${color.name.toLowerCase()}A", color.accent),
                           colorBlock(
                             "${color.name.toLowerCase()}Dark",
                             color.primaryDark,
