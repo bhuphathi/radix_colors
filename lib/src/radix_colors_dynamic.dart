@@ -32,7 +32,7 @@ class RadixColorsDynamic {
   }
 
   RadixColor get blackA {
-    return _isDark ? blackDarkAScale : blackAScale;
+    return blackAScale;
   }
 
   RadixColor get blue {
@@ -272,7 +272,7 @@ class RadixColorsDynamic {
   }
 
   RadixColor get whiteA {
-    return _isDark ? whiteDarkAScale : whiteAScale;
+    return whiteAScale;
   }
 
   RadixColor get yellow {
@@ -318,8 +318,6 @@ class RadixColorsDynamic {
         mint,
         sky,
         grayA,
-        whiteA,
-        blackA,
         mauveA,
         slateA,
         sageA,

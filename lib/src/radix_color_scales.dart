@@ -2357,6 +2357,25 @@ const violetDarkAScale = RadixColor(
   name: "violetDarkA",
 );
 
+// const whiteScale = RadixColor(
+//   0xffffffff,
+//   <int, Color>{
+//     1: Color(0xffe6e6e6),
+//     2: Color(0xffe8e8e8),
+//     3: Color(0xffeaeaea),
+//     4: Color(0xffececec),
+//     5: Color(0xffeeeeee),
+//     6: Color(0xfff0f0f0),
+//     7: Color(0xfff2f2f2), //242
+//     8: Color(0xfff4f4f4), //244
+//     9: Color(0xfff7f7f7), //247
+//     10: Color(0xfffafafa), //250
+//     11: Color(0xfffdfdfd), //253
+//     12: Color(0xffffffff), //255
+//   },
+//   name: "white",
+// );
+
 const whiteScale = RadixColor(
   0xffffffff,
   <int, Color>{
