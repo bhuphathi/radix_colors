@@ -743,7 +743,7 @@ const grayDarkScale = RadixColor(
 );
 
 const grayDarkAScale = RadixColor(
-  0x5fffffff,
+  0x64ffffff,
   <int, Color>{
     1: Color(0x00000000),
     2: Color(0x09ffffff),
